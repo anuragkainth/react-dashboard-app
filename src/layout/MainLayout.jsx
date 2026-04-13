@@ -1,6 +1,9 @@
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import Dashboard from "../pages/Dashboard";
+import Users from "../pages/Users";
+import Settings from "../pages/Settings";
+import { Routes, Route } from "react-router-dom";
 
 function MainLayout() {
   return (
@@ -11,7 +14,11 @@ function MainLayout() {
         <Navbar />
 
         <div className="p-6 bg-gray-100 min-h-screen">
-          <Dashboard />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
         </div>
       </div>
     </div>
