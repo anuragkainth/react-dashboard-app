@@ -18,6 +18,25 @@ A modern React dashboard built with Vite and Tailwind CSS.
 - `hooks/` custom hooks
 - `utils/` helpers
 
+## Project Layout
+
+```
+main.jsx
+  ↓
+App.jsx
+  ↓
+MainLayout.jsx
+  ├── Sidebar.jsx
+  ├── Navbar.jsx
+  └── Routes
+       ├── Dashboard.jsx
+       │    ├── StatCard.jsx
+       │    ├── DataTable.jsx
+       │    └── BarChartComponent.jsx
+       ├── Users.jsx
+       └── Settings.jsx
+```
+
 ## Getting Started
 
 ```bash
